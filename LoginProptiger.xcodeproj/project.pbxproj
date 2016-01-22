@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26053D7D1C52122700FB93EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D7C1C52122700FB93EF /* AppDelegate.swift */; };
+		26053D7F1C52122700FB93EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D7E1C52122700FB93EF /* ViewController.swift */; };
+		26053D821C52122700FB93EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26053D801C52122700FB93EF /* Main.storyboard */; };
+		26053D841C52122700FB93EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26053D831C52122700FB93EF /* Assets.xcassets */; };
+		26053D871C52122700FB93EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26053D851C52122700FB93EF /* LaunchScreen.storyboard */; };
+		26053D921C52122700FB93EF /* LoginProptigerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D911C52122700FB93EF /* LoginProptigerTests.swift */; };
+		26053D9D1C52122700FB93EF /* LoginProptigerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D9C1C52122700FB93EF /* LoginProptigerUITests.swift */; };
+		26053DCA1C5212A100FB93EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26053DB51C52123000FB93EF /* Alamofire.framework */; };
+		26053DCB1C5212A100FB93EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26053DB51C52123000FB93EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26053D8E1C52122700FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053D711C52122700FB93EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26053D781C52122700FB93EF;
+			remoteInfo = LoginProptiger;
+		};
+		26053D991C52122700FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053D711C52122700FB93EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26053D781C52122700FB93EF;
+			remoteInfo = LoginProptiger;
+		};
+		26053DB41C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		26053DB61C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		26053DB81C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		26053DBA1C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		26053DBC1C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		26053DBE1C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		26053DC01C52123000FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		26053DCC1C5212A100FB93EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26053DCE1C5212A200FB93EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				26053DCB1C5212A100FB93EF /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26053D791C52122700FB93EF /* LoginProptiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginProptiger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26053D7C1C52122700FB93EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26053D7E1C52122700FB93EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26053D811C52122700FB93EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26053D831C52122700FB93EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26053D861C52122700FB93EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26053D881C52122700FB93EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26053D8D1C52122700FB93EF /* LoginProptigerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginProptigerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26053D911C52122700FB93EF /* LoginProptigerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProptigerTests.swift; sourceTree = "<group>"; };
+		26053D931C52122700FB93EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26053D981C52122700FB93EF /* LoginProptigerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginProptigerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26053D9C1C52122700FB93EF /* LoginProptigerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProptigerUITests.swift; sourceTree = "<group>"; };
+		26053D9E1C52122700FB93EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Plugins/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26053D761C52122700FB93EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26053DCA1C5212A100FB93EF /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26053D8A1C52122700FB93EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26053D951C52122700FB93EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26053D701C52122700FB93EF = {
+			isa = PBXGroup;
+			children = (
+				26053D7B1C52122700FB93EF /* LoginProptiger */,
+				26053D901C52122700FB93EF /* LoginProptigerTests */,
+				26053D9B1C52122700FB93EF /* LoginProptigerUITests */,
+				26053D7A1C52122700FB93EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26053D7A1C52122700FB93EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26053D791C52122700FB93EF /* LoginProptiger.app */,
+				26053D8D1C52122700FB93EF /* LoginProptigerTests.xctest */,
+				26053D981C52122700FB93EF /* LoginProptigerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26053D7B1C52122700FB93EF /* LoginProptiger */ = {
+			isa = PBXGroup;
+			children = (
+				26053D7C1C52122700FB93EF /* AppDelegate.swift */,
+				26053D7E1C52122700FB93EF /* ViewController.swift */,
+				26053D801C52122700FB93EF /* Main.storyboard */,
+				26053D831C52122700FB93EF /* Assets.xcassets */,
+				26053D851C52122700FB93EF /* LaunchScreen.storyboard */,
+				26053D881C52122700FB93EF /* Info.plist */,
+				26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */,
+			);
+			path = LoginProptiger;
+			sourceTree = "<group>";
+		};
+		26053D901C52122700FB93EF /* LoginProptigerTests */ = {
+			isa = PBXGroup;
+			children = (
+				26053D911C52122700FB93EF /* LoginProptigerTests.swift */,
+				26053D931C52122700FB93EF /* Info.plist */,
+			);
+			path = LoginProptigerTests;
+			sourceTree = "<group>";
+		};
+		26053D9B1C52122700FB93EF /* LoginProptigerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26053D9C1C52122700FB93EF /* LoginProptigerUITests.swift */,
+				26053D9E1C52122700FB93EF /* Info.plist */,
+			);
+			path = LoginProptigerUITests;
+			sourceTree = "<group>";
+		};
+		26053DAB1C52123000FB93EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26053DB51C52123000FB93EF /* Alamofire.framework */,
+				26053DB71C52123000FB93EF /* Alamofire iOS Tests.xctest */,
+				26053DB91C52123000FB93EF /* Alamofire.framework */,
+				26053DBB1C52123000FB93EF /* Alamofire OSX Tests.xctest */,
+				26053DBD1C52123000FB93EF /* Alamofire.framework */,
+				26053DBF1C52123000FB93EF /* Alamofire tvOS Tests.xctest */,
+				26053DC11C52123000FB93EF /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26053D781C52122700FB93EF /* LoginProptiger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26053DA11C52122700FB93EF /* Build configuration list for PBXNativeTarget "LoginProptiger" */;
+			buildPhases = (
+				26053D751C52122700FB93EF /* Sources */,
+				26053D761C52122700FB93EF /* Frameworks */,
+				26053D771C52122700FB93EF /* Resources */,
+				26053DCE1C5212A200FB93EF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26053DCD1C5212A100FB93EF /* PBXTargetDependency */,
+			);
+			name = LoginProptiger;
+			productName = LoginProptiger;
+			productReference = 26053D791C52122700FB93EF /* LoginProptiger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26053D8C1C52122700FB93EF /* LoginProptigerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26053DA41C52122700FB93EF /* Build configuration list for PBXNativeTarget "LoginProptigerTests" */;
+			buildPhases = (
+				26053D891C52122700FB93EF /* Sources */,
+				26053D8A1C52122700FB93EF /* Frameworks */,
+				26053D8B1C52122700FB93EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26053D8F1C52122700FB93EF /* PBXTargetDependency */,
+			);
+			name = LoginProptigerTests;
+			productName = LoginProptigerTests;
+			productReference = 26053D8D1C52122700FB93EF /* LoginProptigerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26053D971C52122700FB93EF /* LoginProptigerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26053DA71C52122700FB93EF /* Build configuration list for PBXNativeTarget "LoginProptigerUITests" */;
+			buildPhases = (
+				26053D941C52122700FB93EF /* Sources */,
+				26053D951C52122700FB93EF /* Frameworks */,
+				26053D961C52122700FB93EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26053D9A1C52122700FB93EF /* PBXTargetDependency */,
+			);
+			name = LoginProptigerUITests;
+			productName = LoginProptigerUITests;
+			productReference = 26053D981C52122700FB93EF /* LoginProptigerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26053D711C52122700FB93EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Proptiger;
+				TargetAttributes = {
+					26053D781C52122700FB93EF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 54ZF4R87TF;
+					};
+					26053D8C1C52122700FB93EF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 26053D781C52122700FB93EF;
+					};
+					26053D971C52122700FB93EF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 26053D781C52122700FB93EF;
+					};
+				};
+			};
+			buildConfigurationList = 26053D741C52122700FB93EF /* Build configuration list for PBXProject "LoginProptiger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26053D701C52122700FB93EF;
+			productRefGroup = 26053D7A1C52122700FB93EF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26053DAB1C52123000FB93EF /* Products */;
+					ProjectRef = 26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				26053D781C52122700FB93EF /* LoginProptiger */,
+				26053D8C1C52122700FB93EF /* LoginProptigerTests */,
+				26053D971C52122700FB93EF /* LoginProptigerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26053DB51C52123000FB93EF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 26053DB41C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26053DB71C52123000FB93EF /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 26053DB61C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26053DB91C52123000FB93EF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 26053DB81C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26053DBB1C52123000FB93EF /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 26053DBA1C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26053DBD1C52123000FB93EF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 26053DBC1C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26053DBF1C52123000FB93EF /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 26053DBE1C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		26053DC11C52123000FB93EF /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 26053DC01C52123000FB93EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26053D771C52122700FB93EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26053D871C52122700FB93EF /* LaunchScreen.storyboard in Resources */,
+				26053D841C52122700FB93EF /* Assets.xcassets in Resources */,
+				26053D821C52122700FB93EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26053D8B1C52122700FB93EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26053D961C52122700FB93EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26053D751C52122700FB93EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26053D7F1C52122700FB93EF /* ViewController.swift in Sources */,
+				26053D7D1C52122700FB93EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26053D891C52122700FB93EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26053D921C52122700FB93EF /* LoginProptigerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26053D941C52122700FB93EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26053D9D1C52122700FB93EF /* LoginProptigerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26053D8F1C52122700FB93EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26053D781C52122700FB93EF /* LoginProptiger */;
+			targetProxy = 26053D8E1C52122700FB93EF /* PBXContainerItemProxy */;
+		};
+		26053D9A1C52122700FB93EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26053D781C52122700FB93EF /* LoginProptiger */;
+			targetProxy = 26053D991C52122700FB93EF /* PBXContainerItemProxy */;
+		};
+		26053DCD1C5212A100FB93EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 26053DCC1C5212A100FB93EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26053D801C52122700FB93EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26053D811C52122700FB93EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26053D851C52122700FB93EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26053D861C52122700FB93EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26053D9F1C52122700FB93EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26053DA01C52122700FB93EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26053DA21C52122700FB93EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LoginProptiger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loading.LoginProptiger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26053DA31C52122700FB93EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LoginProptiger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loading.LoginProptiger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26053DA51C52122700FB93EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoginProptigerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loading.LoginProptigerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginProptiger.app/LoginProptiger";
+			};
+			name = Debug;
+		};
+		26053DA61C52122700FB93EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoginProptigerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loading.LoginProptigerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginProptiger.app/LoginProptiger";
+			};
+			name = Release;
+		};
+		26053DA81C52122700FB93EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoginProptigerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loading.LoginProptigerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoginProptiger;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		26053DA91C52122700FB93EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoginProptigerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loading.LoginProptigerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoginProptiger;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26053D741C52122700FB93EF /* Build configuration list for PBXProject "LoginProptiger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26053D9F1C52122700FB93EF /* Debug */,
+				26053DA01C52122700FB93EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26053DA11C52122700FB93EF /* Build configuration list for PBXNativeTarget "LoginProptiger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26053DA21C52122700FB93EF /* Debug */,
+				26053DA31C52122700FB93EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26053DA41C52122700FB93EF /* Build configuration list for PBXNativeTarget "LoginProptigerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26053DA51C52122700FB93EF /* Debug */,
+				26053DA61C52122700FB93EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26053DA71C52122700FB93EF /* Build configuration list for PBXNativeTarget "LoginProptigerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26053DA81C52122700FB93EF /* Debug */,
+				26053DA91C52122700FB93EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26053D711C52122700FB93EF /* Project object */;
+}
