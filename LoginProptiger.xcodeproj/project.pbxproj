@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		26053D7D1C52122700FB93EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D7C1C52122700FB93EF /* AppDelegate.swift */; };
-		26053D7F1C52122700FB93EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D7E1C52122700FB93EF /* ViewController.swift */; };
 		26053D821C52122700FB93EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26053D801C52122700FB93EF /* Main.storyboard */; };
 		26053D841C52122700FB93EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26053D831C52122700FB93EF /* Assets.xcassets */; };
 		26053D871C52122700FB93EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26053D851C52122700FB93EF /* LaunchScreen.storyboard */; };
@@ -16,6 +15,9 @@
 		26053D9D1C52122700FB93EF /* LoginProptigerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053D9C1C52122700FB93EF /* LoginProptigerUITests.swift */; };
 		26053DCA1C5212A100FB93EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26053DB51C52123000FB93EF /* Alamofire.framework */; };
 		26053DCB1C5212A100FB93EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26053DB51C52123000FB93EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26053DD11C52169900FB93EF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053DD01C52169900FB93EF /* LoginController.swift */; };
+		26053DD31C5216AC00FB93EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053DD21C5216AC00FB93EF /* LoginView.swift */; };
+		26053DD51C5216B800FB93EF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053DD41C5216B800FB93EF /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +110,6 @@
 /* Begin PBXFileReference section */
 		26053D791C52122700FB93EF /* LoginProptiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginProptiger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26053D7C1C52122700FB93EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26053D7E1C52122700FB93EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26053D811C52122700FB93EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26053D831C52122700FB93EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26053D861C52122700FB93EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,6 +121,9 @@
 		26053D9C1C52122700FB93EF /* LoginProptigerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProptigerUITests.swift; sourceTree = "<group>"; };
 		26053D9E1C52122700FB93EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Plugins/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		26053DD01C52169900FB93EF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		26053DD21C5216AC00FB93EF /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		26053DD41C5216B800FB93EF /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,10 +176,12 @@
 			isa = PBXGroup;
 			children = (
 				26053D7C1C52122700FB93EF /* AppDelegate.swift */,
-				26053D7E1C52122700FB93EF /* ViewController.swift */,
 				26053D801C52122700FB93EF /* Main.storyboard */,
 				26053D831C52122700FB93EF /* Assets.xcassets */,
 				26053D851C52122700FB93EF /* LaunchScreen.storyboard */,
+				26053DD01C52169900FB93EF /* LoginController.swift */,
+				26053DD21C5216AC00FB93EF /* LoginView.swift */,
+				26053DD41C5216B800FB93EF /* LoginModel.swift */,
 				26053D881C52122700FB93EF /* Info.plist */,
 				26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */,
 			);
@@ -406,8 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26053D7F1C52122700FB93EF /* ViewController.swift in Sources */,
+				26053DD31C5216AC00FB93EF /* LoginView.swift in Sources */,
+				26053DD51C5216B800FB93EF /* LoginModel.swift in Sources */,
 				26053D7D1C52122700FB93EF /* AppDelegate.swift in Sources */,
+				26053DD11C52169900FB93EF /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
