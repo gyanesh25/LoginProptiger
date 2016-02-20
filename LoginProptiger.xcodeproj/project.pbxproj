@@ -16,8 +16,14 @@
 		26053DCA1C5212A100FB93EF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26053DB51C52123000FB93EF /* Alamofire.framework */; };
 		26053DCB1C5212A100FB93EF /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26053DB51C52123000FB93EF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26053DD11C52169900FB93EF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053DD01C52169900FB93EF /* LoginController.swift */; };
-		26053DD31C5216AC00FB93EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053DD21C5216AC00FB93EF /* LoginView.swift */; };
 		26053DD51C5216B800FB93EF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26053DD41C5216B800FB93EF /* LoginModel.swift */; };
+		2609549F1C774E2A00E876DF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609549D1C774E2A00E876DF /* TableViewCell.swift */; };
+		260954A01C774E2A00E876DF /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2609549E1C774E2A00E876DF /* TableViewCell.xib */; };
+		260EFDF31C6C77AB007EDB31 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260EFDF21C6C77AB007EDB31 /* IndicatorView.swift */; };
+		260EFDF51C6C7813007EDB31 /* PtCommaTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260EFDF41C6C7813007EDB31 /* PtCommaTextFeild.swift */; };
+		260EFDF71C6C8030007EDB31 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260EFDF61C6C8030007EDB31 /* LoadingView.swift */; };
+		260EFDFC1C745130007EDB31 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260EFDFB1C745130007EDB31 /* Utility.swift */; };
+		262F3FBD1C687DB400B5934B /* ProptigerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F3FBC1C687DB400B5934B /* ProptigerSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +128,14 @@
 		26053D9E1C52122700FB93EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Plugins/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		26053DD01C52169900FB93EF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		26053DD21C5216AC00FB93EF /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		26053DD41C5216B800FB93EF /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		2609549D1C774E2A00E876DF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2609549E1C774E2A00E876DF /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		260EFDF21C6C77AB007EDB31 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = Utility/IndicatorView.swift; sourceTree = "<group>"; };
+		260EFDF41C6C7813007EDB31 /* PtCommaTextFeild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PtCommaTextFeild.swift; path = Utility/PtCommaTextFeild.swift; sourceTree = "<group>"; };
+		260EFDF61C6C8030007EDB31 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		260EFDFB1C745130007EDB31 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Utility/Utility.swift; sourceTree = "<group>"; };
+		262F3FBC1C687DB400B5934B /* ProptigerSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProptigerSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,15 +187,11 @@
 		26053D7B1C52122700FB93EF /* LoginProptiger */ = {
 			isa = PBXGroup;
 			children = (
-				26053D7C1C52122700FB93EF /* AppDelegate.swift */,
+				260EFDEB1C6C773B007EDB31 /* Utility */,
+				269CCF331C69ED9D00F0857C /* Extra */,
 				26053D801C52122700FB93EF /* Main.storyboard */,
-				26053D831C52122700FB93EF /* Assets.xcassets */,
-				26053D851C52122700FB93EF /* LaunchScreen.storyboard */,
-				26053DD01C52169900FB93EF /* LoginController.swift */,
-				26053DD21C5216AC00FB93EF /* LoginView.swift */,
-				26053DD41C5216B800FB93EF /* LoginModel.swift */,
-				26053D881C52122700FB93EF /* Info.plist */,
-				26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */,
+				269CCF351C69EEF300F0857C /* TableAndSearch */,
+				269CCF341C69EED500F0857C /* LoginScreen */,
 			);
 			path = LoginProptiger;
 			sourceTree = "<group>";
@@ -218,6 +226,48 @@
 				26053DC11C52123000FB93EF /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		260EFDEB1C6C773B007EDB31 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				260EFDF61C6C8030007EDB31 /* LoadingView.swift */,
+				260EFDF21C6C77AB007EDB31 /* IndicatorView.swift */,
+				260EFDFB1C745130007EDB31 /* Utility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		269CCF331C69ED9D00F0857C /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				26053D7C1C52122700FB93EF /* AppDelegate.swift */,
+				26053D831C52122700FB93EF /* Assets.xcassets */,
+				26053D881C52122700FB93EF /* Info.plist */,
+				26053D851C52122700FB93EF /* LaunchScreen.storyboard */,
+				26053DAA1C52123000FB93EF /* Alamofire.xcodeproj */,
+			);
+			name = Extra;
+			sourceTree = "<group>";
+		};
+		269CCF341C69EED500F0857C /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				260EFDF41C6C7813007EDB31 /* PtCommaTextFeild.swift */,
+				26053DD01C52169900FB93EF /* LoginController.swift */,
+				26053DD41C5216B800FB93EF /* LoginModel.swift */,
+			);
+			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		269CCF351C69EEF300F0857C /* TableAndSearch */ = {
+			isa = PBXGroup;
+			children = (
+				262F3FBC1C687DB400B5934B /* ProptigerSearchViewController.swift */,
+				2609549D1C774E2A00E876DF /* TableViewCell.swift */,
+				2609549E1C774E2A00E876DF /* TableViewCell.xib */,
+			);
+			name = TableAndSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26053D871C52122700FB93EF /* LaunchScreen.storyboard in Resources */,
+				260954A01C774E2A00E876DF /* TableViewCell.xib in Resources */,
 				26053D841C52122700FB93EF /* Assets.xcassets in Resources */,
 				26053D821C52122700FB93EF /* Main.storyboard in Resources */,
 			);
@@ -412,10 +463,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26053DD31C5216AC00FB93EF /* LoginView.swift in Sources */,
+				260EFDFC1C745130007EDB31 /* Utility.swift in Sources */,
 				26053DD51C5216B800FB93EF /* LoginModel.swift in Sources */,
 				26053D7D1C52122700FB93EF /* AppDelegate.swift in Sources */,
+				260EFDF31C6C77AB007EDB31 /* IndicatorView.swift in Sources */,
+				2609549F1C774E2A00E876DF /* TableViewCell.swift in Sources */,
+				262F3FBD1C687DB400B5934B /* ProptigerSearchViewController.swift in Sources */,
+				260EFDF51C6C7813007EDB31 /* PtCommaTextFeild.swift in Sources */,
 				26053DD11C52169900FB93EF /* LoginController.swift in Sources */,
+				260EFDF71C6C8030007EDB31 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
