@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49O-qs-xQD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="19N-SN-kuT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -77,14 +77,6 @@
                                             <action selector="formatTextFunction:" destination="19N-SN-kuT" eventType="editingChanged" id="P2R-8C-nmf"/>
                                         </connections>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvs-Ca-LjJ" customClass="IndicatorView" customModule="LoginProptiger" customModuleProvider="target">
-                                        <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="UQN-gS-6gS"/>
-                                            <constraint firstAttribute="width" constant="100" id="iLx-bj-wne"/>
-                                        </constraints>
-                                    </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oh4-Ic-UvQ">
                                         <rect key="frame" x="213" y="427" width="174" height="128"/>
                                         <constraints>
@@ -96,7 +88,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="f87-zp-BOx" firstAttribute="leading" secondItem="uMg-xm-MhA" secondAttribute="trailing" constant="36" id="0q7-2E-FLr"/>
-                                    <constraint firstItem="Wvs-Ca-LjJ" firstAttribute="centerY" secondItem="LpK-Ba-GyE" secondAttribute="centerY" id="1Vm-Kc-T1M"/>
                                     <constraint firstItem="oh4-Ic-UvQ" firstAttribute="top" secondItem="lNK-VC-7yH" secondAttribute="bottom" constant="41" id="45l-Nl-bCm"/>
                                     <constraint firstItem="DfB-Yg-8AO" firstAttribute="centerX" secondItem="LpK-Ba-GyE" secondAttribute="centerX" id="AbM-U8-67r"/>
                                     <constraint firstItem="uMg-xm-MhA" firstAttribute="trailing" secondItem="V08-n4-MFT" secondAttribute="trailing" id="B8p-TP-QIc"/>
@@ -110,7 +101,6 @@
                                     <constraint firstItem="uMg-xm-MhA" firstAttribute="top" secondItem="V08-n4-MFT" secondAttribute="bottom" constant="20" id="YWV-Of-cOn"/>
                                     <constraint firstItem="lYt-Yg-jvK" firstAttribute="trailing" secondItem="f87-zp-BOx" secondAttribute="trailing" id="aLd-V9-eBo"/>
                                     <constraint firstItem="uMg-xm-MhA" firstAttribute="leading" secondItem="V08-n4-MFT" secondAttribute="leading" id="cfN-2d-Sb8"/>
-                                    <constraint firstItem="Wvs-Ca-LjJ" firstAttribute="centerX" secondItem="LpK-Ba-GyE" secondAttribute="centerX" id="d7r-b2-Aiw"/>
                                     <constraint firstItem="f87-zp-BOx" firstAttribute="top" secondItem="lYt-Yg-jvK" secondAttribute="bottom" constant="20" id="d8g-JA-grl"/>
                                     <constraint firstItem="V08-n4-MFT" firstAttribute="top" secondItem="lYt-Yg-jvK" secondAttribute="top" id="dHD-tG-ffu"/>
                                     <constraint firstItem="uMg-xm-MhA" firstAttribute="bottom" secondItem="f87-zp-BOx" secondAttribute="bottom" id="ho2-DY-gox"/>
@@ -133,7 +123,6 @@
                     </view>
                     <connections>
                         <outlet property="displayResult" destination="PVZ-KF-0sh" id="6Vj-08-j7m"/>
-                        <outlet property="indicatorView" destination="Wvs-Ca-LjJ" id="WEG-jG-e0c"/>
                         <outlet property="password" destination="f87-zp-BOx" id="GS7-eV-IyN"/>
                         <outlet property="testImageView" destination="oh4-Ic-UvQ" id="xTi-MO-odN"/>
                         <outlet property="username" destination="lYt-Yg-jvK" id="xHx-Hb-2Es"/>

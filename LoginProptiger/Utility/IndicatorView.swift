@@ -7,37 +7,137 @@
 //
 
 import UIKit
+import DGActivityIndicatorView
 
 @IBDesignable
-class IndicatorView: UIView {
+class IndicatorView: UIView
+{
+    //MARK:- variable declarations
     
-    var cir = UIBezierPath()
+    private var dgActivityIndicator: DGActivityIndicatorView?
     
-    @IBInspectable
-    var circleRadius: CGFloat = 3
+    private var dgActivityIndicatortype: DGActivityIndicatorAnimationType?
     {
-        didSet {
-            self.setNeedsDisplay()
+        didSet
+        {
+            updateIndicatorSettings()
+        }
+    }
+    private var indicatorColor: UIColor?
+    {
+        didSet
+        {
+            updateIndicatorSettings()
+        }
+    }
+    private var indicatorCenter: CGPoint?
+    {
+        didSet
+        {
+            updateIndicatorSettings()
+        }
+    }
+    private var indicatorSize: CGFloat?
+        {
+        didSet
+        {
+            updateIndicatorSettings()
         }
     }
     
-    var circleCenter: CGPoint {
-        return convertPoint(center, fromView: superview)
-    }
+    //MARK:- init func declarations
     
-    override init(frame: CGRect) {
+    override init(frame: CGRect)
+    {
         super.init(frame: frame)
-        self.superview?.hidden = true
-        configure()
+    }
+
+    required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
     }
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        configure()
+    convenience init(frame: CGRect?, bgColor: UIColor?)
+    {
+        if let frame = frame
+        {
+            self.init(frame: frame)
+        }
+        else
+        {
+            self.init(frame: CGRect())
+        }
+        self.backgroundColor = bgColor
+        self.initializeDGActivityIndicatorView()
     }
     
-    func configure() {
-        backgroundColor = UIColor.whiteColor()
+    
+    //MARK:- override func
+    
+    override func layoutSubviews()
+    {
+        updateIndicatorSettings()
+    }
+    
+
+    //MARK:- user functions
+    
+    private func updateIndicatorSettings()
+    {
+        self.dgActivityIndicator?.type = self.dgActivityIndicatortype ?? DGActivityIndicatorAnimationType.BallPulse
+        self.dgActivityIndicator?.tintColor = self.indicatorColor ?? UIColor.redColor()
+        self.dgActivityIndicator?.center = self.indicatorCenter ?? center
+        self.dgActivityIndicator?.size = self.indicatorSize ?? CGFloat(45)
+        setNeedsDisplay()
+    }
+    
+    private func initializeDGActivityIndicatorView ()
+    {
+        self.dgActivityIndicator = DGActivityIndicatorView()
+        addSubview(self.dgActivityIndicator!)
+        self.dgActivityIndicator?.hidden = true
+        updateIndicatorSettings()
+    }
+    
+    func changeDGActivityIndicatorType (type: DGActivityIndicatorAnimationType?, tintColor: UIColor?)
+    {
+        self.dgActivityIndicatortype = type
+        self.indicatorColor = tintColor
+    }
+    
+    func changeIndicatorPosition (center: CGPoint?)
+    {
+        if let center = center
+        {
+            self.indicatorCenter = center
+        }
+    }
+    
+    func changeIndicatorSize (size: CGFloat?)
+    {
+        if let size = size
+        {
+            self.indicatorSize = size
+        }
+    }
+    
+    func startAnimating ()
+    {
+        if self.dgActivityIndicator == nil
+        {
+            self.initializeDGActivityIndicatorView()
+        }
+        self.dgActivityIndicator?.hidden = false
+        dgActivityIndicator!.startAnimating()
+    }
+    
+    func stopAnimating ()
+    {
+        if let dgActivityIndicator = self.dgActivityIndicator
+        {
+            dgActivityIndicator.stopAnimating()
+            self.dgActivityIndicator?.hidden = true
+        }
     }
     
 }

@@ -13,11 +13,11 @@ let defaults = NSUserDefaults.standardUserDefaults()
 class LoginController: UIViewController {
 
     let loginModelClass = loginModel()
+    var indicatorView: IndicatorView?
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var displayResult: UILabel!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var indicatorView: IndicatorView!
     @IBOutlet weak var testImageView: UIImageView!
     
     @IBAction func formatTextFunction(sender: PtCommaTextFeild) {
@@ -25,6 +25,7 @@ class LoginController: UIViewController {
     }
     
     @IBAction func loginUser(sender: AnyObject) {
+        indicatorView?.startAnimating()
         displayResult.text! = loginModelClass.loginCheck(username: username.text, password: password.text)
     }
     
@@ -42,9 +43,20 @@ class LoginController: UIViewController {
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        indicatorView = IndicatorView()
+        self.view.addSubview(indicatorView!)
+        indicatorView?.changeIndicatorPosition(self.view.center)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserverForName(loginUrl.notificaton, object: nil, queue: NSOperationQueue.mainQueue()) { notification in
+            
+            self.indicatorView?.stopAnimating()
+            
             if let value = notification.userInfo?[loginUrl.key] {
                 if let data = value["data"] as? NSDictionary
                 {
@@ -56,7 +68,7 @@ class LoginController: UIViewController {
                                         "id": data["id"]!
                                         ]
                     defaults.setObject(userDataRequired, forKey: "userInfo")
-                    self.performSegueWithIdentifier("LoginSuccessful", sender: nil)
+//                    self.performSegueWithIdentifier("LoginSuccessful", sender: nil)
                 }
                 else
                 {
@@ -72,26 +84,6 @@ class LoginController: UIViewController {
             self.testImageView.image = Utility.getImageFromStorage("asmdbs.png")
         }
     }
-    
-    
-//    func test()
-//    {
-//        var documentsUrl =  NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-//        print(documentsUrl)
-//        documentsUrl = documentsUrl.URLByAppendingPathComponent("image.png")
-//        print(documentsUrl)
-//        print(documentsUrl.path)
-//        // now lets get the directory contents (including folders)
-//        do {
-//            print (NSFileManager.defaultManager().fileExistsAtPath(documentsUrl.path!))
-//            
-//            let directoryContents = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(documentsUrl, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions())
-//            print(directoryContents)
-//            
-//        } catch let error as NSError {
-//            print(error.localizedDescription)
-//        }
-//    }
 
 }
 

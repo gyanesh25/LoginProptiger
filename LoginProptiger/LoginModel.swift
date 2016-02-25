@@ -26,7 +26,7 @@ class loginModel {
                 let request = Alamofire.request(.POST, "https://www.proptiger.com/app/v1/login", parameters: parameters)
                 request.responseJSON { response in
                     let center = NSNotificationCenter.defaultCenter()
-                    let notification = NSNotification(name: loginUrl.notificaton, object: nil, userInfo: [loginUrl.key: response.result.value!])
+                    let notification = NSNotification(name: loginUrl.notificaton, object: nil, userInfo: [loginUrl.key: response.result.value ?? ""])
                     center.postNotification(notification)
                 }
                 return ""
