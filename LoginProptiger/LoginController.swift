@@ -27,6 +27,10 @@ class LoginController: UIViewController {
     @IBAction func loginUser(sender: AnyObject) {
         indicatorView?.startAnimating()
         displayResult.text! = loginModelClass.loginCheck(username: username.text, password: password.text)
+        if displayResult.text! != ""
+        {
+            indicatorView?.stopAnimating()
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -48,7 +52,7 @@ class LoginController: UIViewController {
         
         indicatorView = IndicatorView()
         self.view.addSubview(indicatorView!)
-        indicatorView?.changeIndicatorPosition(self.view.center)
+        indicatorView?.center = self.view.center
     }
     
     override func viewDidLoad() {
@@ -68,7 +72,7 @@ class LoginController: UIViewController {
                                         "id": data["id"]!
                                         ]
                     defaults.setObject(userDataRequired, forKey: "userInfo")
-//                    self.performSegueWithIdentifier("LoginSuccessful", sender: nil)
+                    self.performSegueWithIdentifier("LoginSuccessful", sender: nil)
                 }
                 else
                 {

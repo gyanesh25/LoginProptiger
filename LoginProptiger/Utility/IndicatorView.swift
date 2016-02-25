@@ -44,12 +44,20 @@ class IndicatorView: UIView
             updateIndicatorSettings()
         }
     }
+    override var center: CGPoint
+    {
+        didSet
+        {
+            updateIndicatorSettings()
+        }
+    }
     
     //MARK:- init func declarations
     
     override init(frame: CGRect)
     {
         super.init(frame: frame)
+        self.initializeDGActivityIndicatorView()
     }
 
     required init?(coder aDecoder: NSCoder)
@@ -68,7 +76,6 @@ class IndicatorView: UIView
             self.init(frame: CGRect())
         }
         self.backgroundColor = bgColor
-        self.initializeDGActivityIndicatorView()
     }
     
     
@@ -86,7 +93,7 @@ class IndicatorView: UIView
     {
         self.dgActivityIndicator?.type = self.dgActivityIndicatortype ?? DGActivityIndicatorAnimationType.BallPulse
         self.dgActivityIndicator?.tintColor = self.indicatorColor ?? UIColor.redColor()
-        self.dgActivityIndicator?.center = self.indicatorCenter ?? center
+        self.dgActivityIndicator?.center = self.indicatorCenter ?? CGPoint(x: bounds.midX, y: bounds.midY)
         self.dgActivityIndicator?.size = self.indicatorSize ?? CGFloat(45)
         setNeedsDisplay()
     }
@@ -96,6 +103,7 @@ class IndicatorView: UIView
         self.dgActivityIndicator = DGActivityIndicatorView()
         addSubview(self.dgActivityIndicator!)
         self.dgActivityIndicator?.hidden = true
+        self.hidden = false
         updateIndicatorSettings()
     }
     
@@ -128,6 +136,7 @@ class IndicatorView: UIView
             self.initializeDGActivityIndicatorView()
         }
         self.dgActivityIndicator?.hidden = false
+        self.hidden = false
         dgActivityIndicator!.startAnimating()
     }
     
@@ -137,6 +146,7 @@ class IndicatorView: UIView
         {
             dgActivityIndicator.stopAnimating()
             self.dgActivityIndicator?.hidden = true
+            self.hidden = true
         }
     }
     
