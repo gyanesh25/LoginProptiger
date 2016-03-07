@@ -3,7 +3,6 @@
 //  LoginProptiger
 //
 //  Created by Gyanesh Mittal on 17/02/16.
-//  Copyright © 2016 Proptiger. All rights reserved.
 //
 
 import Foundation

@@ -3,7 +3,6 @@
 //  LoginProptigerUITests
 //
 //  Created by Gyanesh Mittal on 22/01/16.
-//  Copyright © 2016 Proptiger. All rights reserved.
 //
 
 import XCTest
